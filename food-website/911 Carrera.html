@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche 911 Carrera</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .slider { position: relative; max-width: 600px; margin: auto; }
+        .slides img { width: 100%; display: none; }
+        .slides img.active { display: block; }
+        .table-container { margin: 20px auto; width: 80%; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #f4f4f4; }
+        .button { display: inline-block; padding: 10px 20px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px; margin-top: 20px; cursor: pointer; }
+        .feature-button { display: block; margin: 10px auto; padding: 10px; width: 80%; max-width: 300px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    
+   
+    <h1>Porsche 911 Carrera</h1>
+    
+ 
+    <div class="slider">
+        <div class="slides">
+            <img src="images/porsche/911 carrera/911 carrera front.avif" class="active" alt="Porsche 911 Carrera Front" style="height: 400px; width: auto;">
+            <img src="images/porsche/911 carrera/911 carrera side.avif" alt="Porsche 911 2">
+            <img src="images/porsche/911 carrera/911 carrera back.webp" alt="Porsche 911 3">
+            <img src="images/porsche/911 carrera/911 carrera upper.jpeg" alt="Porsche 911 4">
+            <img src="images/porsche/911 carrera/911 carrera interior.avif" alt="Porsche 911 5">
+            <img src="images/porsche/911 carrera/carrera interior back.jpeg" alt="Porsche 911 6">
+            <img src="images/porsche/911 carrera/carrera tyre.jpeg" alt="Porsche 911 Carrera 7">
+
+        </div>
+    </div>
+
+    
+    <script>
+        let index = 0;
+        function showSlides() {
+            let slides = document.querySelectorAll(".slides img");
+            slides.forEach(slide => slide.classList.remove("active"));
+            index = (index + 1) % slides.length;
+            slides[index].classList.add("active");
+        }
+        setInterval(showSlides, 3000);
+    </script>
+    
+    
+    <div class="table-container">
+        <h2>Key Specifications</h2>
+        <table>
+            <tr><th>Specification</th><th>Details</th></tr>
+            <tr><td>Engine</td><td>3.0L Twin-Turbo Flat-6</td></tr>
+            <tr><td>Power</td><td>379 hp</td></tr>
+            <tr><td>Torque</td><td>450 Nm</td></tr>
+            <tr><td>Transmission</td><td>8-speed PDK Automatic</td></tr>
+            <tr><td>Fuel Type</td><td>Petrol</td></tr>
+            <tr><td>0-100 km/h</td><td>4.2 seconds</td></tr>
+            <tr><td>Alloy Wheel Size</td><td>19-inch (Front), 20-inch (Rear)</td></tr>
+            <tr><td>Number of Cylinders</td><td>6</td></tr>
+            <tr><td>Maximum Engine Speed</td><td>7500 rpm</td></tr>
+            <tr><td>Top Speed</td><td>293 km/h</td></tr>
+            <tr><td>Body Type</td><td>Coupe</td></tr>
+            <tr><td>Seating Capacity</td><td>4</td></tr>
+            <tr><td>Boot Space</td><td>132 Liters</td></tr>
+            <tr><td>Fuel Tank Capacity</td><td>64 Liters</td></tr>
+            <tr><td>Length</td><td>4519 mm</td></tr>
+            <tr><td>Width</td><td>1852 mm</td></tr>
+            <tr><td>Height</td><td>1297 mm</td></tr>
+            <tr><td>Wheelbase</td><td>2450 mm</td></tr>
+        </table>
+    </div>
+    
+    
+    <h2>Special Features</h2>
+    <button class="feature-button" onclick="alert('Porsche Active Suspension Management')">Porsche Active Suspension Management</button>
+    <button class="feature-button" onclick="alert('Sport Chrono Package')">Sport Chrono Package</button>
+    <button class="feature-button" onclick="alert('Adaptive Sport Seats')">Adaptive Sport Seats</button>
+    <button class="feature-button" onclick="alert('BOSE Surround Sound System')">BOSE Surround Sound System</button>
+    <button class="feature-button" onclick="alert('Rear-Axle Steering')">Rear-Axle Steering</button>
+    
+    
+    <a href="hhttps://www.porsche.com/middle-east/_india_/models/911/carrera-models/911-carrera/" class="button" target="_blank">Buy Now</a>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            text-align: center;
+        }
+        .slider {
+    height: 400px; /* Fixed height */
+    overflow: hidden; /* Extra content hide karne ke liye */
+}
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures images are uniform in size */
+        }
+        header {
+            background: linear-gradient(135deg, #000428, #004e92);
+            padding: 20px;
+            color: white;
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .slider {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .slides img {
+            width: 100%;
+            display: none;
+            border-radius: 15px;
+        }
+        .slides img.active {
+            display: block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #007BFF;
+            color: white;
+        }
+        .feature-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .feature-button:hover {
+            background-color: #218838;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #ff9800;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background: #e68900;
+        }
+    </style>
+</head>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche carrera 4gts</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .slider { position: relative; max-width: 600px; margin: auto; }
+        .slides img { width: 100%; display: none; }
+        .slides img.active { display: block; }
+        .table-container { margin: 20px auto; width: 80%; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #f4f4f4; }
+        .button { display: inline-block; padding: 10px 20px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px; margin-top: 20px; cursor: pointer; }
+        .feature-button { display: block; margin: 10px auto; padding: 10px; width: 80%; max-width: 300px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+   
+    <h1>Porsche carrera 4gts</h1>
+    
+ 
+    <div class="slider">
+        <div class="slides">
+            <img src="images/porsche/911 carrera 4gts/front.png" class="active" alt="4gts 1">
+            <img src="images/porsche/911 carrera 4gts/hood.avif" alt="4gts 2" style = "height: 400px; width: auto;">
+            <img src="images/porsche/911 carrera 4gts/side.avif" alt="4gts 3">
+            <img src="images/porsche/911 carrera 4gts/back.jpg" alt="4gts 4">
+            <img src="images/porsche/911 carrera 4gts/interior.avif" alt="4gts 5" style="float: inline-start;">
+            <img src="images/porsche/911 carrera 4gts/interior back.jpg" alt="4gts6">
+            
+
+        </div>
+    </div>
+    
+    <script>
+        let index = 0;
+        function showSlides() {
+            let slides = document.querySelectorAll(".slides img");
+            slides.forEach(slide => slide.classList.remove("active"));
+            index = (index + 1) % slides.length;
+            slides[index].classList.add("active");
+        }
+        setInterval(showSlides, 3000);
+    </script>
+    
+    
+    <div class="table-container">
+        <h1>porsche carrera 4gts Specifications</h1>
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Model</td>
+                <td>Porsche 911 Carrera 4 GTS</td>
+            </tr>
+            <tr>
+                <td>Price (On-Road)</td>
+                <td> ₹27,542,000.00</td>
+            </tr>
+            <tr>
+                <td>Body Type</td>
+                <td>Coupe</td>
+            </tr>
+            <tr>
+                <td>Engine</td>
+                <td>3.0L Twin-Turbo Flat-6</td>
+            </tr>
+            <tr>
+                <td>Power Output</td>
+                <td>480 hp (353 kW)</td>
+            </tr>
+            <tr>
+                <td>Torque</td>
+                <td>570 Nm</td>
+            </tr>
+            <tr>
+                <td>Drivetrain</td>
+                <td>All-Wheel Drive (AWD)</td>
+            </tr>
+            <tr>
+                <td>Acceleration (0-100 km/h)</td>
+                <td>3.3 seconds (PDK)</td>
+            </tr>
+            <tr>
+                <td>Top Speed</td>
+                <td>311 km/h</td>
+            </tr>
+            <tr>
+                <td>Transmission</td>
+                <td>8-speed PDK / 7-speed Manual</td>
+            </tr>
+            <tr>
+                <td>Fuel Type</td>
+                <td>Petrol</td>
+            </tr>
+            <tr>
+                <td>Length</td>
+                <td>4533 mm</td>
+            </tr>
+            <tr>
+                <td>Width</td>
+                <td>1852 mm</td>
+            </tr>
+            <tr>
+                <td>Height</td>
+                <td>1297 mm</td>
+            </tr>
+            <tr>
+                <td>Weight</td>
+                <td>1605 kg</td>
+            </tr>
+            <tr>
+                <td>Infotainment System</td>
+                <td>10.9-inch Porsche Communication Management (PCM) System</td>
+            </tr>
+            <tr>
+                <td>Audio System</td>
+                <td>Bose / Burmester Premium Audio</td>
+            </tr>
+            <tr>
+                <td>Safety Features</td>
+                <td>Porsche Stability Management (PSM), Adaptive Cruise Control, Lane Keep Assist</td>
+            </tr>
+            <tr>
+                <td>Seating Capacity</td>
+                <td>4 People</td>
+            </tr>
+            <tr>
+                <td>Boot Space</td>
+                <td>132 Liters (Front Trunk)</td>
+            </tr>
+            <tr>
+                <td>Ground Clearance</td>
+                <td>120 mm</td>
+            </tr>
+            <tr>
+                <td>Wheels</td>
+                <td>20-inch (Front) / 21-inch (Rear) Alloy Wheels</td>
+            </tr>
+            <tr>
+                <td>Suspension</td>
+                <td>Porsche Active Suspension Management (PASM)</td>
+            </tr>
+            <tr>
+                <td>Warranty</td>
+                <td>2 Years Unlimited km Warranty</td>
+            </tr>
+        </table>
+        
+    </div>
+    
+    
+    <h2>Special Features</h2>
+    <button class="feature-button" onclick="alert('Elegant Coupe-SUV Design')">Elegant Coupe-SUV Design</button>
+    <button class="feature-button" onclick="alert(' Google Maps & Voice Assistant')"> Google Maps & Voice Assistant</button>
+    <button class="feature-button" onclick="alert('Vegan Leather Upholstery')">Vegan Leather Upholstery </button>
+    <button class="feature-button" onclick="alert('Panoramic Sunroof')">Panoramic Sunroof</button>
+    <button class="feature-button" onclick="alert('Wireless Phone Charging')">Wireless Phone Charging</button>
+    <button class="feature-button" onclick="alert('360-Degree Camera')"> 360-Degree Camera</button>
+    
+    
+    <a href="https://shop.digitalvolvo.com/in/product-review?token=2024910539ERRB0E25272500R980000000000000%24FR190XVSW01" class="button" target="_blank">Buy Now</a>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            text-align: center;
+        }
+        .slider {
+    height: 400px; /* Fixed height */
+    overflow: hidden; /* Extra content hide karne ke liye */
+}
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures images are uniform in size */
+        }
+        header {
+            background: linear-gradient(135deg, #000428, #004e92);
+            padding: 20px;
+            color: white;
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .slider {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .slides img {
+            width: 100%;
+            display: none;
+            border-radius: 15px;
+        }
+        .slides img.active {
+            display: block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #007BFF;
+            color: white;
+        }
+        .feature-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .feature-button:hover {
+            background-color: #218838;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #ff9800;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background: #e68900;
+        }
+    </style>
+</head>
+</body>
+</html>

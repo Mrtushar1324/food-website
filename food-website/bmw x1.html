@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW X1</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .slider { position: relative; max-width: 600px; margin: auto; }
+        .slides img { width: 100%; display: none; }
+        .slides img.active { display: block; }
+        .table-container { margin: 20px auto; width: 80%; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #f4f4f4; }
+        .button { display: inline-block; padding: 10px 20px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px; margin-top: 20px; cursor: pointer; }
+        .feature-button { display: block; margin: 10px auto; padding: 10px; width: 80%; max-width: 300px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>BMW X1</h1>
+    
+
+
+    <!-- Image Slider -->
+    <div class="slider">
+        <div class="slides">
+            <img src="images/bmw/x1/bmw x1.webp" class="active" alt="BMW X1 Image 1">
+            <img src="images/bmw/x1/x1 front.jpeg" alt="BMW X1 Image 2">
+            <img src="images/bmw/x1/x1 side.webp" alt="BMW X1 Image 3">
+            <img src="images/bmw/x1/x1 back.jpg" alt="BMW X1 Image 4">
+            <img src="images/bmw/x1/x1 upper.jpg" alt="BMW X1 Image 5">
+            <img src="images/bmw/x1/x1 interior.jpg" alt="BMW X1 Image 6">
+            <img src="images/bmw/x1/x1 back seat.jpeg" alt="BMW X1 Image 7">
+            <img src="images/bmw/x1/x1 tyre.jpeg" alt="BMW X1 Image 8">
+            
+        </div>
+    </div>
+    
+    <script>
+        let index = 0;
+        function showSlides() {
+            let slides = document.querySelectorAll(".slides img");
+            slides.forEach(slide => slide.classList.remove("active"));
+            index = (index + 1) % slides.length;
+            slides[index].classList.add("active");
+        }
+        setInterval(showSlides, 3000);
+    </script>
+    
+    <!-- Key Specifications Table -->
+    <div class="table-container">
+        <h2>Key Specifications</h2>
+        <table>
+            <tr><th>Specification</th><th>Details</th></tr>
+            <tr><td>Engine</td><td>2.0L TwinPower Turbo</td></tr>
+            <tr><td>Power</td><td>190 hp</td></tr>
+            <tr><td>Torque</td><td>400 Nm</td></tr>
+            <tr><td>Transmission</td><td>7-speed Automatic</td></tr>
+            <tr><td>Fuel Type</td><td>Petrol/Diesel</td></tr>
+            <tr><td>0-100 km/h</td><td>7.9 seconds</td></tr>
+            <tr><td>Alloy Wheel Size</td><td>18 inches</td></tr>
+            <tr><td>Strokes</td><td>4</td></tr>
+            <tr><td>Number of Cylinders</td><td>4</td></tr>
+            <tr><td>Maximum Engine Speed</td><td>6500 rpm</td></tr>
+            <tr><td>Top Speed</td><td>225 km/h</td></tr>
+            <tr><td>Body Type</td><td>SUV</td></tr>
+            <tr><td>Seating Capacity</td><td>5</td></tr>
+            <tr><td>Boot Space</td><td>500 Liters</td></tr>
+            <tr><td>Fuel Tank Capacity</td><td>51 Liters</td></tr>
+            <tr><td>Length</td><td>4500 mm</td></tr>
+            <tr><td>Width</td><td>1845 mm</td></tr>
+            <tr><td>Height</td><td>1642 mm</td></tr>
+            <tr><td>Wheelbase</td><td>2692 mm</td></tr>
+        </table>
+    </div>
+    
+    <!-- Special Features as Buttons -->
+    <h2>Special Features</h2>
+    <button class="feature-button" onclick="alert('BMW Intelligent Personal Assistant')">BMW Intelligent Personal Assistant</button>
+    <button class="feature-button" onclick="alert('Panoramic Sunroof')">Panoramic Sunroof</button>
+    <button class="feature-button" onclick="alert('Wireless Charging')">Wireless Charging</button>
+    <button class="feature-button" onclick="alert('Advanced Driver Assistance Systems')">Advanced Driver Assistance Systems</button>
+    <button class="feature-button" onclick="alert('Harman Kardon Sound System')">Harman Kardon Sound System</button>
+    
+    <!-- Buy Now Button -->
+    <a href="https://www.bmw.in/en/all-models/x-series/X1/2022/bmw-x1-overview.html" class="button" target="_blank">Buy Now</a>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(135deg, #000428, #004e92);
+            padding: 20px;
+            color: white;
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .slider {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .slides img {
+            width: 100%;
+            display: none;
+            border-radius: 15px;
+        }
+        .slides img.active {
+            display: block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #007BFF;
+            color: white;
+        }
+        .feature-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .feature-button:hover {
+            background-color: #218838;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #ff9800;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background: #e68900;
+        }
+    </style>
+
+</body>
+</html>

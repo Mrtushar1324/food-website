@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborghini urus</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .slider { position: relative; max-width: 600px; margin: auto; }
+        .slides img { width: 100%; display: none; }
+        .slides img.active { display: block; }
+        .table-container { margin: 20px auto; width: 80%; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #f4f4f4; }
+        .button { display: inline-block; padding: 10px 20px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px; margin-top: 20px; cursor: pointer; }
+        .feature-button { display: block; margin: 10px auto; padding: 10px; width: 80%; max-width: 300px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+   
+    <h1>Lamborghini urus</h1>
+    
+ 
+    <div class="slider">
+        <div class="slides">
+            <img src="images/lamborghini/urus/front side.avif" class="active" alt="urus 1" ">
+            <img src="images/lamborghini/urus/sdie side.avif" alt="urus 2">
+            <img src="images/lamborghini/urus/back side.avif" alt="urus 3">
+            <img src="images/lamborghini/urus/upper side.avif" alt="urus 4">
+            <img src="images/lamborghini/urus/gril.avif" alt="urus 5" style="float: inline-start;">
+            <img src="images/lamborghini/urus/interior.avif" alt="urus 6">
+            <img src="images/lamborghini/urus/handle.avif" alt="urus 7">
+
+        </div>
+    </div>
+    
+    <script>
+        let index = 0;
+        function showSlides() {
+            let slides = document.querySelectorAll(".slides img");
+            slides.forEach(slide => slide.classList.remove("active"));
+            index = (index + 1) % slides.length;
+            slides[index].classList.add("active");
+        }
+        setInterval(showSlides, 3000);
+    </script>
+    
+    
+    <div class="table-container">
+        <h1>Lamborghini urus Specifications</h1>
+        <table>
+            <tr>
+                <th>Specification</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Engine</td>
+                <td>4.0L Twin-Turbocharged V8</td>
+            </tr>
+            <tr>
+                <td>Displacement</td>
+                <td>3,996 cc</td>
+            </tr>
+            <tr>
+                <td>Power Output</td>
+                <td>650 HP (478 kW) @ 6,000 rpm</td>
+            </tr>
+            <tr>
+                <td>Torque</td>
+                <td>850 Nm (627 lb-ft) @ 2,250-4,500 rpm</td>
+            </tr>
+            <tr>
+                <td>RPM</td>
+                <td>6,800 rpm (Redline)</td>
+            </tr>
+            <tr>
+                <td>Transmission</td>
+                <td>8-Speed Automatic</td>
+            </tr>
+            <tr>
+                <td>Drivetrain</td>
+                <td>All-Wheel Drive (AWD)</td>
+            </tr>
+            <tr>
+                <td>0-100 km/h (0-62 mph)</td>
+                <td>3.3 seconds</td>
+            </tr>
+            <tr>
+                <td>Top Speed</td>
+                <td>305 km/h (190 mph)</td>
+            </tr>
+            <tr>
+                <td>Fuel Economy</td>
+                <td>12.7 L/100 km (Combined)</td>
+            </tr>
+            <tr>
+                <td>Fuel Tank Capacity</td>
+                <td>85 liters</td>
+            </tr>
+            <tr>
+                <td>Weight</td>
+                <td>2,197 kg</td>
+            </tr>
+            <tr>
+                <td>Brakes</td>
+                <td>Carbon-Ceramic Discs</td>
+            </tr>
+            <tr>
+                <td>Alloy Wheels</td>
+                <td>21-inch, 22-inch, 23-inch options</td>
+            </tr>
+            <tr>
+                <td>Wheels</td>
+                <td>21-23 inches</td>
+            </tr>
+            <tr>
+                <td>Seating Capacity</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Boot Space</td>
+                <td>616 liters</td>
+            </tr>
+            <tr>
+                <td>Suspension</td>
+                <td>Adaptive Air Suspension</td>
+            </tr>
+            <tr>
+                <td>Length</td>
+                <td>5,112 mm</td>
+            </tr>
+            <tr>
+                <td>Width</td>
+                <td>2,016 mm</td>
+            </tr>
+            <tr>
+                <td>Height</td>
+                <td>1,638 mm</td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>Around $230,000 (Varies by market)</td>
+            </tr>
+        </table>
+    </div>
+    
+    
+    <h2>Special Features</h2>
+    <button class="feature-button" onclick="alert(' Advanced Infotainment')"> Advanced Infotainment</button>
+    <button class="feature-button" onclick="alert('  Off-Road Modes')">  Off-Road Modes</button>
+    <button class="feature-button" onclick="alert(' High-Performance Brakes')"> High-Performance Brakes </button>
+    <button class="feature-button" onclick="alert(' Adaptive Air Suspension')"> Adaptive Air Suspension</button>
+    <button class="feature-button" onclick="alert('Luxurious Interior')">Luxurious Interior</button>
+    <button class="feature-button" onclick="alert('Safety Features')"> Safety Features</button>
+    
+    
+    <a href="https://www.lamborghini.com/en-en/models/urus/urus-performante#banner-slim" class="button" target="_blank">Buy Now</a>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            text-align: center;
+        }
+        .slider {
+    height: 400px; /* Fixed height */
+    overflow: hidden; /* Extra content hide karne ke liye */
+}
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures images are uniform in size */
+        }
+        header {
+            background: linear-gradient(135deg, #000428, #004e92);
+            padding: 20px;
+            color: white;
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .slider {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .slides img {
+            width: 100%;
+            display: none;
+            border-radius: 15px;
+        }
+        .slides img.active {
+            display: block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #007BFF;
+            color: white;
+        }
+        .feature-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .feature-button:hover {
+            background-color: #218838;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #ff9800;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background: #e68900;
+        }
+    </style>
+</head>
+</body>
+</html>

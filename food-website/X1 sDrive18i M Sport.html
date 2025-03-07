@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW X1</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .slider { position: relative; max-width: 600px; margin: auto; }
+        .slides img { width: 100%; display: none; }
+        .slides img.active { display: block; }
+        .table-container { margin: 20px auto; width: 80%; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #f4f4f4; }
+        .button { display: inline-block; padding: 10px 20px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px; margin-top: 20px; cursor: pointer; }
+        .feature-button { display: block; margin: 10px auto; padding: 10px; width: 80%; max-width: 300px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1> BMW X1 sDrive18i M Sport</h1>
+    
+
+
+    <!-- Image Slider -->
+    <div class="slider">
+        <div class="slides">
+            <img src="images/bmw/xi sdrive 18i M Sport/front.webp" class="active" alt="BMW X1 Image 1">
+            <img src="images/bmw/xi sdrive 18i M Sport/grill.webp" alt="BMW X1 Image 2">
+            <img src="images/bmw/xi sdrive 18i M Sport/side ways.webp" alt="BMW X1 Image 3">
+            <img src="images/bmw/xi sdrive 18i M Sport/side.webp" alt="BMW X1 Image 4">
+            <img src="images/bmw/xi sdrive 18i M Sport/back.webp" alt="BMW X1 Image 5">
+            <img src="images/bmw/xi sdrive 18i M Sport/pure back.webp" alt="BMW X1 Image 6">
+            <img src="images/bmw/xi sdrive 18i M Sport/bmw interior.jpg" alt="BMW X1 Image 7">
+            <img src="images/bmw/xi sdrive 18i M Sport/interior back.webp" alt="BMW X1 Image 8">
+            
+        </div>
+    </div>
+    
+    <script>
+        let index = 0;
+        function showSlides() {
+            let slides = document.querySelectorAll(".slides img");
+            slides.forEach(slide => slide.classList.remove("active"));
+            index = (index + 1) % slides.length;
+            slides[index].classList.add("active");
+        }
+        setInterval(showSlides, 3000);
+    </script>
+    
+    <!-- Key Specifications Table -->
+    <div class="table-container">
+        <h2>Key Specifications</h2>
+        <table>
+            <tr><th>Specification</th><th>Details</th></tr>
+            <tr><td>Engine</td><td>1.5L TwinPower Turbo 3-cylinder</td></tr>
+            <tr><td>Power</td><td>136 hp</td></tr>
+            <tr><td>Torque</td><td>230 Nm</td></tr>
+            <tr><td>Transmission</td><td>7-speed DCT Automatic</td></tr>
+            <tr><td>Fuel Type</td><td>Petrol</td></tr>
+            <tr><td>0-100 km/h</td><td>9.2 seconds</td></tr>
+            <tr><td>Alloy Wheel Size</td><td>18 inches</td></tr>
+            <tr><td>Strokes</td><td>4</td></tr>
+            <tr><td>Number of Cylinders</td><td>3</td></tr>
+            <tr><td>Maximum Engine Speed</td><td>6500 rpm</td></tr>
+            <tr><td>Top Speed</td><td>208 km/h</td></tr>
+            <tr><td>Body Type</td><td>SUV</td></tr>
+            <tr><td>Seating Capacity</td><td>5</td></tr>
+            <tr><td>Boot Space</td><td>476 Liters</td></tr>
+            <tr><td>Fuel Tank Capacity</td><td>45 Liters</td></tr>
+            <tr><td>Length</td><td>4500 mm</td></tr>
+            <tr><td>Width</td><td>1845 mm</td></tr>
+            <tr><td>Height</td><td>1642 mm</td></tr>
+            <tr><td>Wheelbase</td><td>2692 mm</td></tr>
+        </table>
+    </div>
+    
+    <!-- Special Features as Buttons -->
+    <h2>Special Features</h2>
+    <button class="feature-button" onclick="alert('BMW Intelligent Personal Assistant')">BMW Intelligent Personal Assistant</button>
+    <button class="feature-button" onclick="alert('Panoramic BMW Curved DisplaySunroof')">Panoramic BMW Curved DisplaySunroof</button>
+    <button class="feature-button" onclick="alert('BMW Curved Display')">BMW Curved Display</button>
+    <button class="feature-button" onclick="alert('Welcome Light Staging')">Welcome Light Staging</button>
+    <button class="feature-button" onclick="alert('Parking Assistance')">Parking Assistance</button>
+    
+    <!-- Buy Now Button -->
+    <a href="https://www.bmw.in/en/all-models/x-series/X1/2022/bmw-x1-overview.html" class="button" target="_blank">Buy Now</a>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(135deg, #000428, #004e92);
+            padding: 20px;
+            color: white;
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .slider {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .slides img {
+            width: 100%;
+            display: none;
+            border-radius: 15px;
+        }
+        .slides img.active {
+            display: block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #007BFF;
+            color: white;
+        }
+        .feature-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .feature-button:hover {
+            background-color: #218838;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #ff9800;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background: #e68900;
+        }
+    </style>
+
+</body>
+</html>
